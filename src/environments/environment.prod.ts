@@ -1,3 +1,6 @@
 export const environment = {
-  production: true
+  id: 0,
+  nome: String,
+  email: String,
+  endereco: String
 };

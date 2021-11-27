@@ -1,0 +1,32 @@
+.body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #72D08E, #55D8C5);
+}
+
+a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  row-gap: 2rem;
+  text-decoration: none;
+  color: #fff;
+}
+
+a:hover {
+  color: blue;
+}
+
+a h1 {
+  font-size: 3rem;
+  display: flex;
+  align-items: center;
+  column-gap: 2rem;
+}
+
+a img {
+  width: 400px;
+}

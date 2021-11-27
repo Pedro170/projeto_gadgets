@@ -1,0 +1,38 @@
+<div class="body">
+
+  <header>
+      <div class="container-header">
+        <img src="https://i.imgur.com/ubaYGeO.png" alt="">
+        <a href="#">voltar</a>
+      </div>
+  </header>
+
+  <div class="container">
+    <div class="container-form">
+      <div class="box-top">
+          <h1>Cadastre - se</h1>
+      </div>
+      <form>
+          <div class="input-field">
+            <i class="fas fa-user"></i>
+            <input [(ngModel)]='usuario.nome' type="text" name="nome" id="nome" placeholder="nome">
+          </div>
+
+          <div class="input-field">
+            <i class="fas fa-envelope"></i>
+            <input [(ngModel)]='usuario.email' type="email" name="email" id="email" placeholder="E-Mail">
+          </div>
+
+          <div class="input-field">
+            <i class="fas fa-city"></i>
+            <input [(ngModel)]='usuario.endereco' type="text" name="endereco" id="end" placeholder="Endereço completo">
+          </div>
+          <button (click)="cadastrar()">Cadastrar</button>
+      </form>
+
+     <!--  <div class="rodape-form">
+          <p>Já tem cadastro? <a href="#">Login</a></p>
+      </div> -->
+    </div>
+  </div>
+</div>
