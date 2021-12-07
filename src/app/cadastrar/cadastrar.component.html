@@ -15,17 +15,17 @@
       <form>
           <div class="input-field">
             <i class="fas fa-user"></i>
-            <input [(ngModel)]='usuario.nome' type="text" name="nome" id="nome" placeholder="nome">
+            <input [(ngModel)]='usuario.nome' type="text" name="nome" id="nome" placeholder="nome" required>
           </div>
 
           <div class="input-field">
             <i class="fas fa-envelope"></i>
-            <input [(ngModel)]='usuario.email' type="email" name="email" id="email" placeholder="E-Mail">
+            <input [(ngModel)]='usuario.email' type="email" name="email" id="email" placeholder="E-Mail" required>
           </div>
 
           <div class="input-field">
             <i class="fas fa-city"></i>
-            <input [(ngModel)]='usuario.endereco' type="text" name="endereco" id="end" placeholder="Endereço completo">
+            <input [(ngModel)]='usuario.endereco' type="text" name="endereco" id="end" placeholder="Endereço completo" required>
           </div>
           <button (click)="cadastrar()">Cadastrar</button>
       </form>

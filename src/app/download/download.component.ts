@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-download',
@@ -7,9 +8,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class DownloadComponent implements OnInit {
 
-  constructor() { }
+  constructor(
+    private router: Router
+  ) { }
 
   ngOnInit(): void {
+    window.scroll(0, 0)
   }
 
+  down() {
+    alert('O download da pasta zip será feito!')
+    this.router.navigate(["/paginaInicio"]);
+  }
 }

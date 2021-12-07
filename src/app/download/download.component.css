@@ -30,3 +30,15 @@ a h1 {
 a img {
   width: 400px;
 }
+
+@media only screen and (max-width: 375px) {
+
+  a h1 {
+    font-size: 2.5rem;
+    column-gap: 1.5rem;
+  }
+
+  a img {
+    width: 320px;
+  }
+}
